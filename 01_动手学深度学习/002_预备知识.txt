@@ -1,28 +1,56 @@
 数据操作
-    入门
-        创建一维向量
-            x = torch.arange(12)
-            tensor([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
-            tensor([[ 1,  1,  2,  3],
-            [ 4,  5,  6,  7],
-            [ 8,  9, 10, 11]])
-        张量形状
-            x.shape
-            torch.Size([12])
-            torch.Size([3, 4])
-        元素大小
-            x.numel()
-            12
-                一维刚好 = 张量形状
-        改变张量形状
-            x.reshape(3, 4)
-            -1
-                可以用于自动计算
-                    x.reshape(-1, 4)
-                    x.reshape(3, -1)
-        0/1/随机填充
-            torch.zeros((2,3,4))
-                ones
-                    .randn(
-        数组填充
-            torch.tensor([[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]])
+	入门
+		创建一维向量
+			x = torch.arange(12)
+			tensor([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
+			tensor([[ 1,  1,  2,  3],
+			[ 4,  5,  6,  7],
+			[ 8,  9, 10, 11]])
+		张量形状
+			x.shape
+			torch.Size([12])
+			torch.Size([3, 4])
+		元素大小
+			x.numel()
+			12
+				一维刚好 = 张量形状
+		改变张量形状
+			x.reshape(3, 4)
+				返回值才是新的
+			-1
+				可以用于自动计算
+					x.reshape(-1, 4)
+					x.reshape(3, -1)
+		0/1/随机填充
+			torch.zeros((2,3,4))
+				ones
+					.randn(
+		数组填充
+			torch.tensor([[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]])
+	运算符
+		对象也有加减乘除
+			幂运算
+				**
+		加
+			__add__
+		减
+			__sub__
+		乘
+			__mul__
+		除
+			__truediv__
+		幂
+			__pow__
+		指数函数
+			torch.exp(x)
+				= math.e ** x
+		所有元素求和
+			torch.sum(x)
+				x.sum()
+		张量连结
+			concatenate
+			torch.cat((x, y), dim=0)
+				0 / -2 竖着来
+					X 在上, Y 在下
+				1 / -1 横着来
+					X 在左, Y 在右
