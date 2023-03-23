@@ -54,3 +54,36 @@
 					X 在上, Y 在下
 				1 / -1 横着来
 					X 在左, Y 在右
+	广播机制
+		broadcasting mechanism
+		形状不同, 想加后 形状相同
+		如:
+			x = torch.arange(3).reshape(3, 1)
+				r3 c1
+			y = torch.ones(3).reshape(1, 3)
+				r1 c3
+			print(y + x)
+				r3 c3
+	索引和切片
+		类似数组
+		选择最后一个元素
+			arr[-1]
+		切片 含头不含尾
+			arr[1:3]
+		二维定位
+			arr[1, 2]
+				第2行, 第3列
+			arr[:, 3]
+				第4列
+			arr[1:3, :]
+				第2-3行
+				=arr[1:3]
+	节约内存
+		切片赋值
+		如:
+			x = torch.arange(12).reshape(3, 4)
+			y = torch.arange(12).reshape(3, 4)
+			d = torch.zeros_like(x)
+			d[:] = x + y
+			print('id(d):', id(d))
+				指针地址不变
