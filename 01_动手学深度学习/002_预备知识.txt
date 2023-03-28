@@ -87,3 +87,43 @@
 			d[:] = x + y
 			print('id(d):', id(d))
 				指针地址不变
+数据预处理
+    读取数据集
+        框架
+            pandas
+                import pandas
+        读取csv
+            read_csv
+                data = pd.read_csv(data_file)
+        分割内容
+            通过index: iloc
+                inputs = data.iloc[:, 0:2]
+            通过key: loc
+                inputs.loc[1, 'AlleyD'] = 'JJ'
+    处理缺失值
+        获取平均值mean
+            num = inputs.mean(numeric_only=True)
+        填充NaN
+            inputs = inputs.fillna(num)
+    转换为张量
+        获取数组
+            arr = inputs.values
+        转换为张量
+            torch.tensor(inputs.values)
+线性代数
+    向量
+        长度
+            len(x)
+        形状
+            x.shape
+    矩阵
+        一维
+            x = torch.arange(20)
+        设置形状
+            x = x.reshape(x, y)
+        转置
+            x = x.T
+    张量
+        设置形状
+            x = x.reshape(z, x, y)
+    降维
