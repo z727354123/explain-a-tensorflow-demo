@@ -56,7 +56,7 @@ if __name__ == '__main__':
                 yield features[batch_indices], labels[batch_indices]
 
 
-        batch_size = 10
+        batch_size = 4
         for X, y in data_iter(batch_size, features, labels):
             print(X, '\nt', y)
             break
@@ -90,6 +90,7 @@ if __name__ == '__main__':
             '''
             with torch.no_grad():
                 for param in params:
+                    print(f"param={param} param.grad = {param.grad}")
                     param -= lr * param.grad / batch_size
                     # 更新参数的值
                     param.grad.zero_()
@@ -109,6 +110,7 @@ if __name__ == '__main__':
                 # 因为l形状是(batch_size,1)，而不是一个标量。
                 # l中的所有元素被加到一起，并以此计算关于[w,b]的梯度
                 # 对当前取出的小批量数据的损失进行反向传播，计算[w, b]的梯度
+                print(f"l.sum()={l.sum()}")
                 l.sum().backward()
                 # 使用参数的梯度更新参数。调用定义好的sgd优化算法进行参数更新
                 sgd([w, b], lr, batch_size)

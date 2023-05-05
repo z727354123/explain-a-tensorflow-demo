@@ -51,38 +51,48 @@ if __name__ == '__main__':
 
         print("-------------------2. 定义softmax操作----------------------")
 
+        # 定义一个2x3的向量
         X = torch.tensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
+        # 对二维矩阵按行或列求和，并在结果中保留行或列(keepdim=True)，这里分别求和的结果为1x3和2x1的向量
         print(X.sum(0, keepdim=True), X.sum(1, keepdim=True))
 
 
+        # 对于向量X的每个元素，计算其指数，然后归一化
         def softmax(X):
+            # 对X中的每个元素做指数
             X_exp = torch.exp(X)
+            # 对每个向量进行归一化，分母部分
             partition = X_exp.sum(1, keepdim=True)
             return X_exp / partition  # 这⾥应⽤了⼴播机制
 
 
+        # 产生一个2x5的矩阵X，填充为标准正态分布
         X = torch.normal(0, 1, (2, 5))
         X_prob = softmax(X)
         print(X_prob, X_prob.sum(1))
 
         print("-------------------3. 定义模型----------------------")
 
-
+        # 定义模型，这里W和b都是需要训练的参数，使用softmax作为激活函数
         def net(X):
             return softmax(torch.matmul(X.reshape((-1, W.shape[0])), W) + b)
 
 
         print("-------------------4. 定义损失函数----------------------")
 
+        # 定义标签y
         y = torch.tensor([0, 2])
+        # 定义模型预测的标签概率
         y_hat = torch.tensor([[0.1, 0.3, 0.6], [0.3, 0.2, 0.5]])
         print(y_hat[[0, 1], y])
 
-
+        # 使用下标[[0, 1], y]获取y_hat中标签所对应的概率
+        # 交叉熵损失函数的定义，将y_hat中每个样本所预测分类概率中正确分类的概率取负数再求平均值
         def cross_entropy(y_hat, y):
             return - torch.log(y_hat[range(len(y_hat)), y])
 
 
+        # 使用y_hat和y计算交叉熵
         print(cross_entropy(y_hat, y))
 
         print("-------------------5. 分类精度----------------------")
@@ -90,12 +100,15 @@ if __name__ == '__main__':
 
         def accuracy(y_hat, y):  # @save
             """计算预测正确的数量"""
+            # 如果有多个预测值，则选择每个样本中预测概率最大的作为最终预测结果
             if len(y_hat.shape) > 1 and y_hat.shape[1] > 1:
                 y_hat = y_hat.argmax(axis=1)
+            # 将预测值与真实值做比较
             cmp = y_hat.type(y.dtype) == y
+            # 统计预测对的数量
             return float(cmp.type(y.dtype).sum())
 
-
+        # 计算y_hat和y的精度
         print(accuracy(y_hat, y) / len(y))
 
 
@@ -241,5 +254,5 @@ if __name__ == '__main__':
             titles = [true + '\n' + pred for true, pred in zip(trues, preds)]
             d2l.show_images(X[0:n].reshape((n, 28, 28)), 1, n, titles=titles[0:n])
 
-
+        # 用训练好的网络对前n个样本的输入输出进行预测
         predict_ch3(net, test_iter)
