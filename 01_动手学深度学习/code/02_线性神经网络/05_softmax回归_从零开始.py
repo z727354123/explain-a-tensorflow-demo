@@ -224,8 +224,8 @@ if __name__ == '__main__':
                                 legend=['train loss', 'train acc', 'test acc'])
             for epoch in range(num_epochs):
                 train_metrics = train_epoch_ch3(net, train_iter, loss, updater)
-            test_acc = evaluate_accuracy(net, test_iter)
-            animator.add(epoch + 1, train_metrics + (test_acc,))
+                test_acc = evaluate_accuracy(net, test_iter)
+                animator.add(epoch + 1, train_metrics + (test_acc,))
             train_loss, train_acc = train_metrics
             assert train_loss < 0.5, train_loss
             assert train_acc <= 1 and train_acc > 0.7, train_acc
