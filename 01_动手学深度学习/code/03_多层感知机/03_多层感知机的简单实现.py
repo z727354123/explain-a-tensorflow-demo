@@ -1,13 +1,13 @@
 # 导入相关模块
-import torch  # 导入 torch 模块
-from torch import nn  # 从 torch 中导入 nn 模块
-from d2l import torch as d2l  # 导入 d2l 中的 torch 模块
+import torch
+from torch import nn
+from d2l import torch as d2l
 
 if __name__ == '__main__':
 	# 加载数据集
 	if True:
 		# 设置批量大小
-		batch_size = 256  # 设置批量大小为 256
+		batch_size = 256
 		# 加载 Fashion-MNIST 数据集
 		train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)  # 从 d2l 中导入 Fashion-MNIST 数据集加载模块，加载训练集和测试集
 		# 设置神经网络结构
@@ -17,13 +17,20 @@ if __name__ == '__main__':
 		                    nn.Linear(256, 10))  # 输入大小为 256，输出大小为 10 的线性层
 
 
-		def init_weights(m):  # 自定义参数初始化方法，对于模型中的 nn.Linear 模块，将其权重参数初始化为在一个小的正态分布随机样本。
+		# 自定义初始化函数，对隐藏层使用正态分布随机初始化
+		def init_weights(m):
 			if type(m) == nn.Linear:
 				nn.init.normal_(m.weight, std=0.01)
 
-		net.apply(init_weights);  # 对模型应用自定义参数初始化方法
+
+		# 对模型net的权重进行自定义初始化
+		net.apply(init_weights);
 		batch_size, lr, num_epochs = 256, 0.1, 10
+		# 损失函数为交叉熵损失
 		loss = nn.CrossEntropyLoss(reduction='none')
-		trainer = torch.optim.SGD(net.parameters(), lr=lr)  # 定义优化器
-		train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)  # 重新加载 Fashion-MNIST 数据集
-		d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)  # 调用模型训练函数进行训练
+		trainer = torch.optim.SGD(net.parameters(), lr=lr)
+		# 加载 Fashion-MNIST 数据集
+		train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
+		# 训练并评估模型net
+		d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
+
