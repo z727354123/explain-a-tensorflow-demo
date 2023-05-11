@@ -33,4 +33,6 @@ if __name__ == '__main__':
 		train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
 		# 训练并评估模型net
 		d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
+		# 对测试集进行测试，并打印准确率
+		d2l.predict_ch3(net, test_iter)
 
