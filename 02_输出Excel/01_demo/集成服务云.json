@@ -1,0 +1,920 @@
+{
+  "V5.0.021_0519": [
+    {
+      "href": "https://vip.kingdee.com/article/446608069645120768",
+      "name": "【新功能】新增了企业内部局域网使用私有云苍穹，通过集成服务云访问其他云服务的参数配置，若用户启用该参数，可以不校验https安全证书"
+    },
+    {
+      "href": "https://vip.kingdee.com/link/s/lcwv0",
+      "name": "【功能优化】优化了集成云环境变量敏感信息风险提示及控制项，明确了不可做为环境变量的信息内容，严格控制域名、密钥等敏感信息的录入"
+    },
+    {
+      "href": null,
+      "name": "【功能优化】优化了批量调用业务对象操作（$batch_action）函数，新增了一个targetActionParams入参，用户可以通过配置该入参选择是否抛出异常信息并中断脚本"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/447051725103493632",
+      "name": "【新功能】新增了SAP WebService的集成方式，支持通过连接器集成SAP S4HANA等提供WebService调用方式的系统"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/446722665747738624?productLineId=29&isKnowledge=2",
+      "name": "【新功能】新增了集成云SAP RFC系统代理，支持通过连接器集成SAP ECC、S4HANA等提供RFC调用方式的系统"
+    }
+  ],
+  "V5.0.020_0428": [
+    {
+      "href": "https://vip.kingdee.com/article/136534888760835840",
+      "name": "【功能优化】新增了通过自定义连接器工厂类，自定义开发第三方系统连接器的方式，用户可以自主实现高度自定义的连接器，以支持各类协议的接口"
+    },
+    {
+      "href": "https://vip.kingdee.com/link/s/lGEoy",
+      "name": "【功能优化】优化了WebAPI登记功能，界面新增启用禁用功能按钮，且脚本执行工具可选择WebApi登记作为依赖资源，丰富了WebAPI可调用场景"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/102367421314739456",
+      "name": "【新功能】新增了服务流程WebAPI调用节点，界面支持可视化配置“WebAPI登记”中已经登记好的API，丰富了服务流程支持的调用场景"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13893",
+      "name": "【功能优化】新增了下次执行计划按钮，启用的定时类型启动方案后，若方案过期时间在当前时间之后，则用户可以查看下次执行计划时间"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/190409484811457280",
+      "name": "【功能优化】更新了离线数据导出方案选择导出类型为CSV文件时，支持逗号、分号、竖线、制表符、空格五种分隔符，用户可根据实际需要自定义分隔符"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/436173612408526080",
+      "name": "【新功能】新增了苍穹-API2.0连接器，此预置连接类型支持开放平台2.0版本的API接口调用，当用户需要与企业外部的苍穹系统进行集成时，此连接器可以通过WebAPI实现两者之间的集成"
+    },
+    {
+      "href": "https://vip.kingdee.com/link/s/lZ1se",
+      "name": "【功能优化】优化了解决方案更新订阅模式，并新增了点赞反馈等交互，用户可根据业务需要选择方案订阅至我的方案列表进行部署使用，用户自主订阅选择性更强"
+    }
+  ],
+  "V5.0.018_0331": [
+    {
+      "href": null,
+      "name": "【新功能】新增了后台监控任务，用于监测非活跃状态服务流程实例，并标记为中断"
+    },
+    {
+      "href": null,
+      "name": "【功能优化】优化了连接类型图标样式，针对免费连接类型在图标上显示免费标识"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/428202062057192192",
+      "name": "【新功能】新增了集成云脚本片段模板功能，用户在脚本开发中可快速引用预置和自定义的脚本示例片段，极大较低脚本开发难度，提升开发效率"
+    }
+  ],
+  "V5.0.017_0312": [
+    {
+      "href": "https://vip.kingdee.com/article/411913521295765504",
+      "name": "【功能优化】优化了集成服务云预置的“苍穹多维数据库”连接类型，用户可以通过IP、端口号、用户名、密码来连接到苍穹多维数据库，来读写多维数据库的数据"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/416603137886383360",
+      "name": "【新功能】新增了WebAPI登记功能，用于快速登记外部系统的API到苍穹中，从而用户能够在苍穹中调用外部系统接口"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/133973884251810560?productLineId=29&isKnowledge=2",
+      "name": "【新功能】新增了日志引出按钮，用户可以在服务流程日志界面和API日志界面根据列表和引出模板一键引出日志数据"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/373423084927343104?productLineId=29&isKnowledge=2",
+      "name": "【功能优化】优化了许可白名单更新时的逻辑校验，避免本地正在运行的白名单被覆盖"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/420877431323397376",
+      "name": "【新功能】新增了天眼查监控连接类型，用户可通过域名、key、id、用户名信息连接天眼查监控池对外开放的接口平台实现集成"
+    }
+  ],
+  "V5.0.016_0225": [
+    {
+      "href": "https://vip.kingdee.com/article/411838496370981376",
+      "name": "【新功能】新增了Moka连接器，通过IP或域名、端口号和API Key等信息连接Moka HR系统对外开放的接口平台实现集成"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/416193057697139200",
+      "name": "【功能优化】优化了集成方案自动映射匹配，能够根据相似度阀值自动映射，提升异构系统业务单据字段匹配度"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/399217772854432768",
+      "name": "【功能优化】优化了集成方案向导化功能，帮助用户按步骤快速配置集成方案，极大降低学习及实施成本"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/410382587182521600",
+      "name": "【新功能】新增了有成CRM连接器，通过appId、appSecret、corpId及预置白名单等信息链接有成CRM系统对外开放的接口平台实现集成"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/410739175701474816",
+      "name": "【新功能】支持了单据级的通知发送功能，满足数据集成方案运行成功/失败场景下，可以将集成的源数据/目标数据等作为消息的发送内容，通知发送更明细精确"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/416281787409886464?productLineId=29&isKnowledge=2",
+      "name": "【新功能】新增了文件集成按指定目录定时读取的服务流程Demo方案，适用于用户需要定时处理指定路径里文件的场景需要"
+    }
+  ],
+  "V5.0.014_0114": [
+    {
+      "href": null,
+      "name": "新增了脚本函数根据ID删除苍穹附件方法"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/53043475167434240",
+      "name": "新增了脚本执行工具执行并下载结果功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/53043475167434240",
+      "name": "新增了服务流程脚本执行工具依赖资源类型"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/181725?productLineId=29&isKnowledge=2",
+      "name": "新增了导入集成云微服务功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/288631348191725056?productLineId=29&isKnowledge=2",
+      "name": "支持了已删除资源和历史版本资源的恢复"
+    },
+    {
+      "href": null,
+      "name": "优化了源对象为KDB连接器时启动方案不计总数直接取数"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/400244419607107072",
+      "name": "集成云内置涉及新增了集成云应用相关知识帖子一键查阅功能"
+    }
+  ],
+  "V5.0.012_1217": [
+    {
+      "href": "https://vip.kingdee.com/article/13648?productLineId=29&isKnowledge=2",
+      "name": "新增连接类型显示禁用按钮"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13886?productLineId=29&isKnowledge=2",
+      "name": "新增集成方案映射关系-聚合运算处做到可选可填并提供示例"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13674?productLineId=29&isKnowledge=2",
+      "name": "新增EAS部署后把访问键Hash码记录下来"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456?productLineId=29&isKnowledge=2",
+      "name": "新增服务流程消息MQ发送节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/385751575513716480",
+      "name": "优化新增供应商主数据方案"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/147029?productLineId=29&isKnowledge=2",
+      "name": "日志清理工具界面调整及"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13893?productLineId=29&isKnowledge=2",
+      "name": "启动方案列表支持下游启动方案查询"
+    }
+  ],
+  "V5.0.011_1117": [
+    {
+      "href": null,
+      "name": "新增了连接配置向导新增功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/368005912084739840?productLineId=29&isKnowledge=2",
+      "name": "新增了方案中心资源明细"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13674?productLineId=29&isKnowledge=2",
+      "name": "新增了连接配置反部署功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456?productLineId=29&isKnowledge=2",
+      "name": "增加了服务流程字段映射节点的安全模式选项"
+    },
+    {
+      "href": null,
+      "name": "优化了服务流程后台任务执行"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13935?productLineId=29&isKnowledge=2",
+      "name": "完善了执行日志值转换异常显示"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/224210833139103488?productLineId=29&isKnowledge=2",
+      "name": "完善了集成操作日志"
+    }
+  ],
+  "V5.0.009_0924": [
+    {
+      "href": "https://developer.kingdee.com/article/185442417443647232?productLineId=29&isKnowledge=2",
+      "name": "新增了星空-苍穹集成方案（税收制度）"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/360354807783447552?productLineId=29&isKnowledge=2",
+      "name": "新增了弘人WMS连接类型"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/355410903174408704?productLineId=29&isKnowledge=1",
+      "name": "新增了KDB连接类型"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/224487940015890432?productLineId=29&isKnowledge=2",
+      "name": "新增了函数OpenAPI.queryData和OpenAPI.invokeOperation"
+    },
+    {
+      "href": null,
+      "name": "新增了SAP Hana连接类型"
+    },
+    {
+      "href": null,
+      "name": "新增了鑫方盛连接类型"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/224487940015890432?productLineId=29&isKnowledge=2",
+      "name": "支持了执行数据库存储过程（execute_call）"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/360418142109391872",
+      "name": "支持了SAP表结构集成对象同步"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13893?productLineId=29&isKnowledge=2",
+      "name": "完善了启动方案、服务流程和API任务事件触发的导入逻辑"
+    }
+  ],
+  "V5.0.008_0909": [
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456?productLineId=29&isKnowledge=2",
+      "name": "新增了服务流程节点循环块"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/240792533016257280?productLineId=29&isKnowledge=2",
+      "name": "新增了行政组织（SAP-苍穹）集成方案"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/224487940015890432?productLineId=29&isKnowledge=2",
+      "name": "新增了parseJsoup函数"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/350582071829388032?productLineId=29&isKnowledge=0",
+      "name": "新增了金山文档连接器"
+    },
+    {
+      "href": null,
+      "name": "新增了首页工作台事件触发日志失败数"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/352135371263500800?productLineId=29&isKnowledge=2",
+      "name": "新增了集成服务云任务调度功能"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/13893?productLineId=29&isKnowledge=2",
+      "name": "新增了启动方案设置项“补偿代理用户”"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/133891644620679936",
+      "name": "新增了服务流程设置项“补偿代理用户”"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/352145767182261248",
+      "name": "新增了腾讯文档连接器"
+    },
+    {
+      "href": "https://developer.kingdee.com/school/353217533186588416?productLineId=29&isKnowledge=2",
+      "name": "新增了客商物料分配反分配方案包for(EAS-苍穹)"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13806?productLineId=29&isKnowledge=2",
+      "name": "支持了集成对象（数据表类型）同步时获取备注字段信息"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13838?productLineId=29&isKnowledge=2",
+      "name": "支持了人工映射匹配结果导入导出"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13838?productLineId=29&isKnowledge=2",
+      "name": "支持了人工映射匹配结果导入/导出"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/294757094505722880?productLineId=29&isKnowledge=2",
+      "name": "优化了数据库代理的同步性能"
+    }
+  ],
+  "V5.0.007_0827": [
+    {
+      "href": "https://developer.kingdee.com/article/222323568103540480?productLineId=29&isKnowledge=2",
+      "name": "新增了sftp连接类型"
+    },
+    {
+      "href": null,
+      "name": "新增了流程实例字段(实例字节数)"
+    },
+    {
+      "href": null,
+      "name": "新增了白山云ESB连接类型"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/345147169562937600",
+      "name": "新增了微信公众平台连接类型"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/342980205520511488",
+      "name": "新增了心知天气连接类型"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/347703836171719680",
+      "name": "新增了华为XDM连接类型"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/343352657617927936",
+      "name": "新增了用友YonBIP连接类型"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/67933739128786688?productLineId=29&isKnowledge=2",
+      "name": "支持了星空连接器配置时选择数据中心"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/184350?productLineId=29&isKnowledge=2",
+      "name": "支持了RocketMQ延时发送设置"
+    },
+    {
+      "href": null,
+      "name": "支持了API集成发布API参数到新版开放平台2.0"
+    },
+    {
+      "href": null,
+      "name": "优化了撤销性能"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/224487940015890432?productLineId=29&isKnowledge=2",
+      "name": "优化了撤销信号CheckCancelSignal函数"
+    }
+  ],
+  "V5.0.006_0812": [
+    {
+      "href": null,
+      "name": " 支持了开放平台的API服务导入导出功能"
+    }
+  ],
+  "V5.0.005_0730": [
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456?productLineId=29&isKnowledge=2",
+      "name": "新增了服务流程数据获取节点开关选项（结果行以map形式展示）"
+    },
+    {
+      "href": null,
+      "name": "新增了日志清理工具支持过滤仅成功状态的日志进行清理的功能"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/271283784191045376?productLineId=29&isKnowledge=2",
+      "name": "新增了数据集成方案固定值支持选择集成云变量的场景"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/184335?productLineId=29&isKnowledge=2",
+      "name": "新增了消息集成支持MSMQ的功能"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/184335?productLineId=29&isKnowledge=2",
+      "name": "新增了消息集成支持ActiveMQ的功能"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/224487940015890432?productLineId=29&isKnowledge=2",
+      "name": "新增了附件集成函数（DataFile.uploadAndBindFile和DataFile.uploadFile）"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/224487940015890432?productLineId=29&isKnowledge=2",
+      "name": "增加了query_list2和query_row2函数"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/3302?productLineId=1",
+      "name": "支持了通过微服务的方式，同步调用启动方案时支持重定向源和目标数据源。"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/192646982014734592?productLineId=29&isKnowledge=2",
+      "name": "支持了数据迁移导入支持Excel文件分录"
+    },
+    {
+      "href": "https://vip-admin.kingdee.com/article/335791432537716992",
+      "name": "支持了弹性域类型字段集成"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/190409484811457280?productLineId=29&isKnowledge=2",
+      "name": "支持了数据迁移导出支持Excel文件分录"
+    },
+    {
+      "href": null,
+      "name": "优化了撤销信号检查的性能"
+    }
+  ],
+  "V5.0.004_0715": [
+    {
+      "href": null,
+      "name": "脚本编辑器优化"
+    }
+  ],
+  "V5.0.003_0702": [
+    {
+      "href": "https://vip.kingdee.com/school/326736787534325504?productLineId=29",
+      "name": "支持ES日志转储"
+    },
+    {
+      "href": null,
+      "name": "支持流程实例变量和集成日志下载"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/327033758601811712?productLineId=29&isKnowledge=2",
+      "name": "发布事件触发高性能并发解决方案"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/319522402570823424?productLineId=29&isKnowledge=2",
+      "name": "发布集成方案/服务流程中使用代理用户+代理组织的方法"
+    },
+    {
+      "href": null,
+      "name": "执行结果增加耗时统计列"
+    }
+  ],
+  "V5.0.002_0612": [
+    {
+      "href": "https://vip.kingdee.com/questions/312282826282217472/answers/312282826282217472?productLineId=29",
+      "name": "新增内置子级函数pull（取数并转换）、convert（转换）、push（转换并写数）"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/312598539077583872?productLineId=29",
+      "name": "新增云资源应用申请"
+    },
+    {
+      "href": null,
+      "name": "新增云星辰连接器"
+    },
+    {
+      "href": null,
+      "name": "新增精斗云云进销存连接器"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/224487940015890432",
+      "name": "新增脚本函数invokeOpenApi和queryOpenApi"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/311888662554379264?productLineId=29",
+      "name": "新增数据库连接"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/311911243210403840?productLineId=29",
+      "name": "新增数据库复制"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/312239352808113152?productLineId=29",
+      "name": "新增数据库比较"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/314350070042572544?productLineId=29",
+      "name": "新增集成云资源保护策略"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/314350070042572544?productLineId=29",
+      "name": "新增集成云资源保护策略"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/310070486715547392",
+      "name": "支持集成服务云中调用自定义会计事件"
+    },
+    {
+      "href": "https://developer.kingdee.com/article/183681",
+      "name": "完善连接类型功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/240792533016257280?productLineId=29",
+      "name": "完善方案中心"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/225261933522404608",
+      "name": "完善自定义API功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13886?productLineId=29",
+      "name": "数据集成方案与服务流程数据加载支持操作参数"
+    }
+  ],
+  "V4.0.020_0428": [
+    {
+      "href": "https://developer.kingdee.com/article/224487940015890432",
+      "name": "新增executeWithRealDataSource和submitWithRealDataSource微服务"
+    },
+    {
+      "href": null,
+      "name": "新增资源中心应用"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/225261933522404608?productLineId=29",
+      "name": "支持自定义API通过WSDL创建"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/303841808474181888",
+      "name": "支持API日志直接转储ElasticSearch"
+    }
+  ],
+  "V4.0.019_0415": [
+    {
+      "href": "https://vip.kingdee.com/article/292340278743611136",
+      "name": "新增自定义事件功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456?productLineId=29",
+      "name": "新增子流程服务流程节点"
+    }
+  ],
+  "V4.0.018_0326": [
+    {
+      "href": "https://vip.kingdee.com/article/292340278743611136",
+      "name": "新增自定义事件功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "新增服务流程事件等待节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/292005155950962432",
+      "name": "新增脚本及值转换耗时统计功能"
+    },
+    {
+      "href": null,
+      "name": "优化了连接配置通知模板内容（增加错误信息和完整堆载））"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/294757094505722880",
+      "name": "数据库代理2.0"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13893",
+      "name": "定时调度新增执行作业的用户（启动方案、服务流程、API任务（定时））"
+    },
+    {
+      "href": null,
+      "name": "预置语雀连接类型"
+    },
+    {
+      "href": null,
+      "name": "预置Salesforce连接类型"
+    },
+    {
+      "href": null,
+      "name": "预置飞书连接类型"
+    }
+  ],
+  "V4.0.017_0314": [
+    {
+      "href": "https://vip.kingdee.com/article/288631348191725056",
+      "name": "新增已删除资源菜单"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/288698475762606336",
+      "name": "新增案例(无规律值转换映射关系Excel导入)"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/48078516092789760 ",
+      "name": "支持苍穹和星空附件集成"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/13893",
+      "name": "支持启动方案的目标数据推送方式的消息队列多选消息发布主题"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/13931",
+      "name": "执行结果新增字段“实际源系统”和“实际目标系统”"
+    }
+  ],
+  "V4.0.016_0225": [
+    {
+      "href": "https://vip.kingdee.com/article/271283784191045376",
+      "name": "新增集成云环境变量"
+    },
+    {
+      "href": null,
+      "name": "新增服务流程RPA节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/282542238201004032",
+      "name": "新增脚本调试器"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/133891644620679936",
+      "name": "新增资源引用关系功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/282101067482132224",
+      "name": "新增连接配置回调代理用户校验"
+    },
+    {
+      "href": null,
+      "name": "新增账无忧连接类型"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/185442417443647232",
+      "name": "新增星空职能属性同步（星空-苍穹）"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/186056519703075328",
+      "name": "新增星空职能属性同步（星空-苍穹）"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/13844",
+      "name": "新增值转换规则设置启动方案功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/14476",
+      "name": "新增脚本值转换规则调源/目标系统API的函数功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/274837714875444992",
+      "name": "支持数据集成方案的来源数据处理脚本中添加目标系统连接"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/282542238201004032",
+      "name": "完善脚本编辑"
+    }
+  ],
+  "V4.0.015_0114": [
+    {
+      "href": "/tolink?target=https%3A%2F%2Fclub.kdcloud.com%2Farticle%2F13935",
+      "name": "新增了日志traceid，方便全链路跟踪"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "新增SM4加密算法"
+    },
+    {
+      "href": "/tolink?target=https%3A%2F%2Fclub.kdcloud.com%2Farticle%2F13893",
+      "name": "新增启动方案的参数(失败日志数阈值)"
+    },
+    {
+      "href": null,
+      "name": "新增快递100连接类型"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/264760180091642880",
+      "name": "支持了封存EAS的组织单元（行政组织类型）同步删除云之家中对应的组织"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "支持Excel文件集成多sheet页读写"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "支持RSA加解密算法"
+    },
+    {
+      "href": "/tolink?target=https%3A%2F%2Fclub.kdcloud.com%2Farticle%2F192646982014734592",
+      "name": "数据迁移导入方案的处理脚本支持批处理功能"
+    }
+  ],
+  "V4.0.014_1226": [
+    {
+      "href": "https://vip.kingdee.com/article/255653144523723008",
+      "name": "新增直接读取文件内容和往文件写入数据的函数"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "新增服务流程参数“自动保存的时间间隔\""
+    },
+    {
+      "href": null,
+      "name": "新增集成云服务器实例字段\"运行环境信息”-存储对应（账套ID/租户ID/集群名称）"
+    },
+    {
+      "href": null,
+      "name": "新增服务流程/数据集成以发起人重试功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/255650501390171648",
+      "name": "新增Demo案例“每次提交单据时生成另一张新单据”"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/260722025901981184",
+      "name": "新增健康度检测功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13774",
+      "name": "新增集成对象支持生成Word文档功能"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/192646982014734592",
+      "name": "支持数据迁移CSV格式的导出和导入"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/190409484811457280",
+      "name": "支持数据迁移xls格式的导出和导入"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13893",
+      "name": "支持查询出将该方案作为后置任务的启动方案"
+    }
+  ],
+  "V4.0.012_1128": [
+    {
+      "href": "https://club.kdcloud.com/article/13893",
+      "name": "新增了启动方案支持重定向源系统和目标系统"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/3302",
+      "name": "新增了微服务接口用于业务云指定目标系统执行加载/查询服务"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/248452924949747200",
+      "name": "新增了自定义分类Demo"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13811",
+      "name": "集成对象（数据表、实体类型）新增了索引信息按钮"
+    }
+  ],
+  "V4.0.010_1028": [
+    {
+      "href": "https://vip.kingdee.com/school/236877018481121024",
+      "name": "新增了集成云HUB事件集成"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "新增数据迁移函数"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/3302",
+      "name": "新增导入微服务接口"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "支持数据加载分批参数控制"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/236796580437540608",
+      "name": "支持业务调用追溯"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/238589265897466880",
+      "name": "适配EAS密码算法改造"
+    }
+  ],
+  "V4.0.008_0925": [
+    {
+      "href": "https://club.kdcloud.com/article/224210833139103488",
+      "name": "新增了集成操作日志"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/211212545607143680",
+      "name": "新增了如何在脚本中调用Web服务的Demo"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/3302",
+      "name": "新增了服务流程微服务同步启动接口"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "新增fastjson解析函数"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/224487940015890432",
+      "name": "新增服务流程脚本节点批量调用业务操作函数$batch_action"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/223767191454218496",
+      "name": "新增腾讯云IDaaS千帆玉符连接器"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13696",
+      "name": "支持数据库代理的代理用户非必填和生成32位访问键值"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/215165569970835712",
+      "name": "支持数据集成方案批量集成接口"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/209001240019912704",
+      "name": "对应的EAS连接器部署包下载路径"
+    }
+  ],
+  "V4.0.004_0729": [
+    {
+      "href": null,
+      "name": "新增了API调用统计功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/192581520119070464",
+      "name": "新增了数据迁移功能"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "新增了函数CheckCancelSignal支持服务流程撤销"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "新增了服务流程的数据对比节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "新增了服务流程的API调用节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "新增了服务流程的节点块节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "新增了服务流程的流程终止节点"
+    },
+    {
+      "href": null,
+      "name": "新增了“校验参数数据格式”校验API格式"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/78504225646188288",
+      "name": "新增了GetContext \\WithContext \\ThreadStack三个函数"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/3470",
+      "name": "新增了HTTP调用字节流"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/102367421314739456",
+      "name": "支持了服务流程引入服务流程资源"
+    },
+    {
+      "href": null,
+      "name": "支持了部分类别转API方案的查看页面展示输入输出参数列表"
+    },
+    {
+      "href": null,
+      "name": "支持了消息订阅主题关联查询启动方案和服务流程"
+    },
+    {
+      "href": "https://vip.kingdee.com/school/3302",
+      "name": "支持了数据集成方案/启动方案微服务增加带动态对象列表做参数值的接口方法"
+    },
+    {
+      "href": null,
+      "name": "支持了星空连接器适配星空oracle类型的数据库"
+    },
+    {
+      "href": null,
+      "name": "支持了星空组织职能属性同步至苍穹业务单元职能"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/13693",
+      "name": "支持了非HTTP协议访问类的连接器流量控制"
+    },
+    {
+      "href": null,
+      "name": "支持了服务流程中数据集成节点中设置了“IN”过滤条件，重做时会走事件触发的执行"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/190523838181495552",
+      "name": "优化了集成服务云导入功能"
+    },
+    {
+      "href": null,
+      "name": "优化了首页工作台的重点关注栏目"
+    },
+    {
+      "href": "https://club.kdcloud.com/article/202367788994620672",
+      "name": "优化了集成服务云的操作按钮权限"
+    },
+    {
+      "href": null,
+      "name": "修复了EAS多语言取值问题（orm取数错误）"
+    },
+    {
+      "href": null,
+      "name": "修复了工作台点击更多无内容的问题"
+    },
+    {
+      "href": null,
+      "name": "修复了苍穹-EAS 费用报销单同步附件51M时同步异常的问题"
+    }
+  ],
+  "V4.0.002_0529": [
+    {
+      "href": "https://vip.kingdee.com/school/3302",
+      "name": "新增了FTP集成"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/107121035534659072",
+      "name": "新增了服务流程忽略节点"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/107121035534659072",
+      "name": "支持了服务流程手工修改流程变量值"
+    }
+  ],
+  "V4.0.001_0514": [
+    {
+      "href": null,
+      "name": "新增了执行日志手工标记失效的功能"
+    },
+    {
+      "href": null,
+      "name": "优化连接类型，保存或启用时校验扩展脚本是否实现工厂类。"
+    },
+    {
+      "href": "https://vip.kingdee.com/article/174535790225899264",
+      "name": "完善了服务流程通知功能"
+    }
+  ]
+}
