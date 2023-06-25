@@ -1,0 +1,45 @@
+sudo -i
+exit
+history
+root1@testVP:~$ !1
+sudo -i
+root@testVP:~# history
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -F
+apt-get purge netfilter-persistent
+apt update -y
+apt install -y curl
+apt install -y socat
+curl https://get.acme.sh | sh
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --issue -d book.xxx.cn --standalone
+~/.acme.sh/acme.sh --issue -d game.xxx.cn --standalone
+~/.acme.sh/acme.sh --issue -d game.xxx.cn --standalone --debug
+~/.acme.sh/acme.sh --issue -d game.xxx.cn --standalone --log
+cat /root/.acme.sh/acme.sh.log
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --issue -d book2.xxx.cn --standalone --log
+~/.acme.sh/acme.sh --issue -d book2.xxx.cn --standalone --log
+~/.acme.sh/acme.sh --upgrade
+~/.acme.sh/acme.sh --issue -d book2.xxx.cn --standalone --log
+~/.acme.sh/acme.sh --upgrade
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --issue -d game2.xxx.cn --standalone --log
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com -F
+curl https://get.acme.sh | sh
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --register-account -m xxx@qq.com
+~/.acme.sh/acme.sh --issue -d game2.xxx.cn --standalone --log
+
+~/.acme.sh/acme.sh --installcert -d game2.xxx.cn --key-file /root/private.key --fullchain-file /root/cert.crt
+
+/root/private.key
+/root/cert.crt
+
+
+
+bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
